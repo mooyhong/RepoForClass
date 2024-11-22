@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Details Toggle Menu</title>
+    <title>Details Menu</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -14,58 +13,37 @@
             padding: 10px;
             text-align: center;
         }
-        nav button {
+        nav a {
             background-color: #008CBA;
             color: white;
+            text-decoration: none;
             border: none;
             padding: 10px 20px;
             margin: 0 10px;
-            cursor: pointer;
             border-radius: 5px;
             font-size: 16px;
+            display: inline-block;
         }
-        nav button:hover {
+        nav a:hover {
             background-color: #005f73;
-        }
-        .content {
-            display: none;
-            margin: 20px;
-            padding: 20px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            background-color: #f9f9f9;
-        }
-        .content.active {
-            display: block;
         }
     </style>
 </head>
 <body>
     <header>
         <nav>
-            <button onclick="showDetails('my-details')">My Details</button>
-            <button onclick="showDetails('spiderman-details')">Spider-Man's Details</button>
+            <a href="index.html">My Details</a>
+            <a href="newindex.html">Spider-Man's Details</a>
         </nav>
     </header>
 
-    <script>
-        function showDetails(sectionId) {
-            // Hide all content sections
-            document.querySelectorAll('.content').forEach(section => {
-                section.classList.remove('active');
-            });
-            // Show the selected section
-            document.getElementById(sectionId).classList.add('active');
-        }
-    </script>
 </body>
 </html>
 
 
 
 
-
-<h1> My details</h1>
+<h1> My Details</h1>
 <p> Name: Charisse Barnett </p>
 <p> Age: 21</p>
 <p> ID: 662115501</p>
